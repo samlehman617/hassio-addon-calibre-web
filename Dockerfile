@@ -21,9 +21,9 @@ LABEL \
     org.opencontainers.image.vendor="Sam Lehman" \
     org.opencontainers.image.authors="Sam Lehman <samlehman617@gmail.com>" \
     org.opencontainers.image.licenses="MIT" \
-    org.opencontainers.image.url="https://hub.docker.com/samlehman617/calibre-web-hassio-addon" \
-    org.opencontainers.image.source="https://github.com/samlehman617/calibre-web-hassio-addon" \
-    org.opencontainers.image.documentation="https://github.com/samlehman617/calibre-web-hassio-addon/blob/master/README.md" \
+    org.opencontainers.image.url="https://hub.docker.com/samlehman617/hassio-addon-calibre-web" \
+    org.opencontainers.image.source="https://github.com/samlehman617/hassio-addon-calibre-web" \
+    org.opencontainers.image.documentation="https://github.com/samlehman617/hassio-addon-calibre-web/blob/master/README.md" \
     org.opencontainers.image.created=${BUILD_DATE} \
     org.opencontainers.image.revision=${BUILD_REF} \
     org.opencontainers.image.version=${BUILD_VERSION}

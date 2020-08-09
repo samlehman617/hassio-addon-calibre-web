@@ -3,10 +3,10 @@
     "version": "0.4",
     "slug": "calibre-web",
     "description": "Calibre Web book server",
-    "url": "https://github.com/samlehman617/calibre-web-hassio-addon",
+    "url": "https://github.com/samlehman617/hassio-addon-calibre-web",
     "startup": "after",
     "boot": "auto",
-    "image": "samlehman617/{arch}-calibre-web",
+    "image": "samlehman617/{arch}-hassio-addon-calibre-web",
     "arch": ["armv7", "armhf", "amd64", "aarch64", "i386"],
     "options": {
         "robots.txt_path": "/share/books/robots.txt",
