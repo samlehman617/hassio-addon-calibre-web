@@ -1,0 +1,39 @@
+{
+    "name": "Calibre Web",
+    "version": "0.4",
+    "slug": "calibre-web",
+    "description": "Calibre Web book server",
+    "url": "https://github.com/samlehman617/calibre-web-hassio-addon",
+    "startup": "after",
+    "boot": "auto",
+    "image": "samlehman617/{arch}-calibre-web",
+    "arch": ["armv7", "armhf", "amd64", "aarch64", "i386"],
+    "options": {
+        "robots.txt_path": "/share/books/robots.txt",
+        "url": "https://example.com",
+        "use_ssl": true,
+        "certfile": "certfile.pem",
+        "keyfile": "privkey.pem"
+    },
+    "schema": {
+        "robots.txt_path": "str?",
+        "url": "url?",
+        "use_ssl": "bool",
+        "certfile": "str?",
+        "keyfile": "str?"
+    },
+    "ports": {"8083/tcp": null},
+    "map": ["share:rw", "ssl:ro"],
+    "apparmor": true,
+    "ingress": true,
+    "panel_icon": "mdi:book",
+    "panel_title": "Books",
+    "stage": "experimental",
+    "legacy": false,
+    "services": [
+        "book_download:provide",
+        "book_upload:provide",
+        "book_convert:provide",
+        "tts:want"
+    ]
+}
